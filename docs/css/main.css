@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "bang";
+  src: url(../fonts/bang-variable.woff2) format("woff2-variations");
+       /*url(fonts/bang-regular.woff2) format("woff2"); /* for older browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes round {
+  from {
+    font-variation-settings: "wght" 0;
+  }
+  to {
+    font-variation-settings: "wght" 70;
+  }
+}
+
+.regular {
+  font-variation-settings: "wght" 0;
+}
+
+.medium {
+  font-variation-settings: "wght" 35;
+}
+
+.bold {
+  font-variation-settings: "wght" 70;
+}
+
+.animated {
+  animation: round 2s alternate infinite linear;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+html {
+  font-size: 16px;
+  font-family: "bang", sans-serif;
+  font-variation-settings: "wght" 0;
+}
+
+.content {
+  max-width: 60em;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 15rem;
+  margin-bottom: 5rem;
+}
+
+p {
+  font-size: 5rem;
+  margin-bottom: 1em;
+}
