@@ -57,11 +57,46 @@ html {
 }
 
 h1 {
-  font-size: 15rem;
+  font-size: 30rem;
   margin-bottom: 5rem;
 }
 
 p {
   font-size: 5rem;
   margin-bottom: 1em;
+}
+
+
+
+/* Range input */
+
+input[type=range] {
+  -webkit-appearance: none;
+  display: block;
+  margin: 0 auto 4rem;
+  width: 30rem;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track,
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #cdcdcd;
+}
+
+input[type=range]::-webkit-slider-thumb,
+input[type=range]::-moz-range-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
 }
